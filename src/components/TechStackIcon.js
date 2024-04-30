@@ -41,6 +41,9 @@ import ignition from '../static/ignition.png';
 import materialui from '../static/materialui.png';
 import webpack from '../static/webpack.png';
 import go from '../static/go.png';
+import objc from '..static/objc.svg';
+import karma from '..static/karma.png';
+import jasmine from '..static/jasmine.png';
 
 class TechStackIcon extends React.Component {
     static icons = {
@@ -85,7 +88,10 @@ class TechStackIcon extends React.Component {
         swagger: swagger,
         spyder: spyder,
         go: go,
-        ignition: ignition
+        ignition: ignition,
+        objc: objc,
+        karma: karma,
+        jasmine: jasmine
     };
 
     static niceName(tech) {
@@ -138,6 +144,9 @@ class TechStackIcon extends React.Component {
             else if (icon === npm) {
                 return 'npm'
             }
+            else if (icon === objc) {
+                return 'Objective-C'
+            }
             else if ([aws, css, html, sql].includes(icon)) {
                 return t.toUpperCase()
             }
@@ -154,7 +163,7 @@ class TechStackIcon extends React.Component {
         let icon = TechStackIcon.getIcon(tech)
         let categories = []
 
-        if ([java, python, javascript, typescript, go, c, cpp, sql].includes(icon)) {
+        if ([java, python, javascript, typescript, go, c, cpp, objc, sql].includes(icon)) {
             categories.push('Programming Language')
         }
         if ([sql, mongodb, neo4j, hibernate].includes(icon)) {
@@ -166,7 +175,7 @@ class TechStackIcon extends React.Component {
         if ([maven, gradle, bitbucket, git, github, aws, okta, swagger, jenkins, docker, jira, npm].includes(icon)) {
             categories.push('DevOps')
         }
-        if ([junit, jest, postman, maven, gradle].includes(icon)) {
+        if ([junit, jest, karma, jasmine, postman, maven, gradle].includes(icon)) {
             categories.push('Testing')
         }
         if ([eclipse, vscode, intellij, spyder].includes(icon)) {

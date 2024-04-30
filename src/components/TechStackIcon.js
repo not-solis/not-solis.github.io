@@ -41,11 +41,11 @@ import ignition from '../static/ignition.png';
 import materialui from '../static/materialui.png';
 import webpack from '../static/webpack.png';
 import go from '../static/go.png';
-import objc from '..static/objc.svg';
-import karma from '..static/karma.png';
-import jasmine from '..static/jasmine.png';
-import android from '..static/android.png';
-import ios from '..static/ios.png';
+import objc from '../static/objc.svg';
+import karma from '../static/karma.png';
+import jasmine from '../static/jasmine.png';
+import android from '../static/android.png';
+import ios from '../static/ios.png';
 
 class TechStackIcon extends React.Component {
     static icons = {

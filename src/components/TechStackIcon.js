@@ -44,6 +44,8 @@ import go from '../static/go.png';
 import objc from '..static/objc.svg';
 import karma from '..static/karma.png';
 import jasmine from '..static/jasmine.png';
+import android from '..static/android.png';
+import ios from '..static/ios.png';
 
 class TechStackIcon extends React.Component {
     static icons = {
@@ -91,7 +93,9 @@ class TechStackIcon extends React.Component {
         ignition: ignition,
         objc: objc,
         karma: karma,
-        jasmine: jasmine
+        jasmine: jasmine,
+        android: android,
+        ios: ios
     };
 
     static niceName(tech) {
@@ -147,6 +151,9 @@ class TechStackIcon extends React.Component {
             else if (icon === objc) {
                 return 'Objective-C'
             }
+            else if (icon === ios) {
+                return 'iOS'
+            }
             else if ([aws, css, html, sql].includes(icon)) {
                 return t.toUpperCase()
             }
@@ -169,7 +176,7 @@ class TechStackIcon extends React.Component {
         if ([sql, mongodb, neo4j, hibernate].includes(icon)) {
             categories.push('Database')
         }
-        if ([spring, angular, reactLogo, hibernate, opengl, corenlp, junit, swagger, okta, twilio, twitch, ignition, materialui, webpack].includes(icon)) {
+        if ([spring, angular, reactLogo, android, ios, hibernate, opengl, corenlp, junit, swagger, okta, twilio, twitch, ignition, materialui, webpack].includes(icon)) {
             categories.push('Frameworks, Libraries, and API\'s')
         }
         if ([maven, gradle, bitbucket, git, github, aws, okta, swagger, jenkins, docker, jira, npm].includes(icon)) {

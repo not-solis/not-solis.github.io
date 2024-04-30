@@ -22,8 +22,14 @@ class Resume extends React.Component {
                 'JavaScript',
                 'TypeScript',
                 'Java',
+                'Android',
+                'iOS',
                 'SQL',
                 'Git',
+                'VSCode',
+                'JUnit',
+                'Karma',
+                'Jasmine'
             ]
         },
         {

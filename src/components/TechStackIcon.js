@@ -208,6 +208,9 @@ class TechStackIcon extends React.Component {
         if (tech === 'material ui') {
             tech = 'materialui'
         }
+        if (tech === 'objective-c') {
+            tech = 'objc'
+        }
 
         return TechStackIcon.icons[tech]
     }

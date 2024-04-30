@@ -37,6 +37,7 @@ class Resume extends React.Component {
             shortDescription: 'Structured quality reporting system for ESRD patients and providers',
             role: 'Full Stack Software Engineer',
             start: 'July 2021',
+            end: 'Mar 2022',
             roles: [
                 'Designed incremental data migration system for archiving billions of clinical health records using a network of lightweight AWS Lambda applications, offloading work to Postgres RDS and Redshift and communicating through SQS'
             ],

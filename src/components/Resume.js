@@ -5,6 +5,28 @@ import calpoly from '../static/calpoly.png';
 class Resume extends React.Component {
     workProjects = [
         {
+            name: 'Admob Formats',
+            shortDescription: 'Enabling ad revenue for mobile app publishers through format innovation and performance',
+            role: 'Software Engineer',
+            start: 'Mar 2022',
+            roles: [
+                'Led design meetings with cross-functional teams as the owner of video infrastructure for high impact features affecting several billions of queries per day',
+                'Identified and triaged feature gaps in Chrome media and Android web views with their respective teams'
+            ],
+            accomplishments: [
+                'Designed web view TypeScript ad parsing API for new ad opportunities enabling over $200M ARR',
+                'Migrated video ad traffic to modern HTML5 video standards, reducing bug volume and SDK package size by 40% and vastly simplifying the ad rendering workflow',
+                'Debugged and re-enabled video caching mechanism in iOS ads SDK, reducing network and YouTube server bandwidth by over 29%'
+            ],
+            techStack: [
+                'JavaScript',
+                'TypeScript',
+                'Java',
+                'SQL',
+                'Git',
+            ]
+        },
+        {
             name: 'EQRS',
             shortDescription: 'Structured quality reporting system for ESRD patients and providers',
             role: 'Full Stack Software Engineer',
